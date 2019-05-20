@@ -1,9 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Kandy from "./components/KandyKorner"
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter as Router } from "react-router-dom"
+import Kandy from './components/KandyKorner'
 
+import './index.css'
 
-ReactDOM.render(<Kandy />, document.querySelector('#root'));
+ReactDOM.render(
+    <Router>
+        <Kandy />
+    </Router>
+    , document.getElementById('root'))
 
 
