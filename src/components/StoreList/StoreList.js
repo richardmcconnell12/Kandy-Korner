@@ -8,7 +8,7 @@ export default class Stores extends Component {
                 {
                     this.props.stores.map(store =>
                         <div key={store.id}>
-                            <h4>{store.storeName}</h4>
+                            <h5>{store.storeName}</h5>
                         </div>
                     )
                 }
